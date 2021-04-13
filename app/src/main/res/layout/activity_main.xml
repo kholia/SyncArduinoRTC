@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/label_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Sync Arduino RTC"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:background="@drawable/border"
+        android:drawablePadding="10dip"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/label_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="1. Connect the Arduino to the phone.\n\n2. Press the 'Sync' icon below.\n\n3. Hold the Sync button on the Arduino for 7 seconds.\n\n4. Tweak the 'Diff Value' as needed.\n\n"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/button_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_refresh_black_24dp" />
+
+    <EditText
+        android:id="@+id/diff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
+        android:text="1.2"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/log_messages_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border"
+        android:drawablePadding="10dip"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:text="Log Messages" />
+
+    <TextView
+        android:id="@+id/log_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        android:drawablePadding="10dip"
+        android:ellipsize="end"
+        android:paddingLeft="2dip"
+        android:paddingRight="10dip"
+        android:scrollbars="vertical"
+        android:text=""
+        android:textSize="13sp" />
+
+</RelativeLayout>
